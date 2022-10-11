@@ -1,0 +1,35 @@
+@media (max-width: 1160px) {
+    .wrapper .main {
+        padding: 28px 22px;
+    }
+
+    .wrapper .main .mainInfo .details {
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .wrapper .main .mainInfo .details div {
+        width: 100%;
+    }
+
+    .wrapper .nextDaysWeather .difference {
+        padding: 16px 24px;
+    }
+
+    .wrapper .nextDaysWeather .mainInfo .day-list {
+        padding: 8px 20px;
+    }
+
+    .wrapper .nextDaysWeather .mainInfo .day-list .item .day-list-item {
+        font-size: 15px;
+    }
+
+    .wrapper .nextDaysWeather .mainInfo .day-list p {
+        font-size: 19px;
+    }
+
+    .wrapper .nextDaysWeather .mainInfo .day-list .item img {
+        width: 54px;
+        height: 54px;
+    }
+}

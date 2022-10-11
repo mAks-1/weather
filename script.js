@@ -25,12 +25,13 @@ function showWeather(e) {
             response.json()
         )
         .then(data => {
-            console.log(data);
+            console.log(data)
             lat = data.coord.lat;
             lon = data.coord.lon;
             document.querySelector(".cityNameLogo").innerHTML = data.name;
             document.querySelector(".day").innerHTML = now;
             document.querySelector(".temperature").innerHTML = Math.round(data.main.temp - 272) + '&deg';
+            document.querySelector(".feelsLike").innerHTML = 'Feels like ' + Math.round(data.main.feels_like - 272) + '&deg';
             document.querySelector(".mainWeather").innerHTML = data.weather[0].main;
             document.querySelector("#p1").innerHTML = data.wind.speed + ' m/s';
             document.querySelector("#p2").innerHTML = data.main.humidity + ' %';
@@ -63,7 +64,6 @@ function showWeather(e) {
                     response.json()
                 )
                 .then(data =>{
-                    console.log(data);
                     for(let i = 0; i < humidity.length; i++){
                         humidity[i].innerHTML = 'Temperature ' + data.daily[i + 1].temp.day + '&deg';
                         wind[i].innerHTML = 'Wind ' + data.daily[i + 1].wind_speed + ' m/s';
