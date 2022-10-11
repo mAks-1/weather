@@ -1,6 +1,18 @@
-@media (max-width: 1160px) {
+@media (max-width: 1200px) {
     .wrapper .main {
-        padding: 28px 22px;
+        width: 50%;
+    }
+
+    .wrapper .main .header .cityName h2{
+        font-size: 36px;
+    }
+
+    .wrapper .main .header .cityName img{
+        width: 46px;
+    }
+
+    .wrapper .main .weatherIcon .weatherIconImg{
+        margin: 8px auto 0 auto;
     }
 
     .wrapper .main .mainInfo .details {
@@ -8,8 +20,38 @@
         width: 100%;
     }
 
+    .wrapper .main .mainInfo .day {
+        font-size: 19px;
+    }
+
+    .wrapper .main .mainInfo .time{
+        font-size: 19px;
+        font-weight: 500;
+    }
+
+    .wrapper .main .mainInfo .feelsLike{
+        font-size: 18px;
+    }
+
+    .wrapper .main .mainInfo .temperature{
+        font-size: 58px;
+        font-weight: 500;
+    }
+
     .wrapper .main .mainInfo .details div {
-        width: 100%;
+        width: 75%;
+    }
+
+    .wrapper .main .mainInfo .details p{
+        font-size: 17px;
+    }
+
+    .wrapper #nextDaysWeather{
+        width: 40%;
+    }
+
+    .wrapper #nextDaysWeather:hover{
+        transform: scale(1.1) perspective(1500px);
     }
 
     .wrapper .nextDaysWeather .difference {
@@ -31,5 +73,59 @@
     .wrapper .nextDaysWeather .mainInfo .day-list .item img {
         width: 54px;
         height: 54px;
+    }
+}
+
+@media (max-width: 810px) {
+    .wrapper{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .wrapper .main {
+        width: 70%;
+        margin-bottom: 0;
+    }
+
+    .wrapper .main .header .cityName h2{
+        font-size: 28px;
+    }
+
+    .wrapper .main .header .cityName img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .wrapper .main .weatherIcon .weatherIconImg{
+        width: 96px;
+        height: 96px;
+    }
+
+    .wrapper .main .mainInfo .temperature{
+        font-size: 50px;
+    }
+
+    .wrapper #nextDaysWeather{
+        width: 55%;
+    }
+}
+
+@media (max-width: 560px) {
+    .wrapper .main {
+        width: 78%;
+    }
+
+    .wrapper .nextDaysWeather .mainInfo .day-list .item .day-list-item {
+        font-size: 13px;
+        list-style: none;
+    }
+
+    .wrapper #nextDaysWeather{
+        width: 70%;
+    }
+
+    .wrapper .nextDaysWeather .mainInfo .day-list .item img {
+        width: 40px;
+        height: 40px;
     }
 }
