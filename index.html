@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="main">
+        <div class="header">
+            <div class="container">
+                <input type="text" placeholder="Search here">
+                <img src="./img/settings.png" alt="">
+            </div>
+            <!--        <button class="btn">Enter</button>-->
+            <div class="cityName">
+                <img src="./img/pin.png" alt="">
+                <h2 class="cityNameLogo"></h2>
+            </div>
+        </div>
+
+        <div class="weatherIcon"><img class="weatherIconImg" src="" alt=""></div>
+
+        <div class="mainInfo">
+            <h3 class="day"></h3>
+            <h3 class="time"></h3>
+            <h1 class="temperature"></h1>
+            <h3 class="mainWeather"></h3>
+            <div class="details">
+                <div>
+                    <img src="./img/wind-sign.png" alt="">
+                    <p>wind</p>
+                    <img class="line" src="./img/line.png" alt="">
+                    <p id="p1"></p>
+                </div>
+                <div>
+                    <img src="./img/water-drop.png" alt="">
+                    <p>hum</p>
+                    <img class="line" src="./img/line.png" alt="">
+                    <p id="p2"></p>
+                </div>
+            </div>
+        </div>
+        <button class="btn">Show detailed info</button>
+    </div>
+
+    <div id="nextDaysWeather" class="main nextDaysWeather">
+        <ul class="mainInfo difference">
+            <li class="day-list">
+                <p class="days">tuesday</p>
+                <ul class="item">
+                    <div>
+                        <li class="day-list-item mW">clouds</li>
+                        <li class="day-list-item temp"></li>
+                        <li class="day-list-item wind"></li>
+                    </div>
+                    <img class="nextDayWeatherImg" src="./img/thunderstorm.png" alt="">
+
+                </ul>
+            </li>
+            <li class="day-list">
+                <p class="days">tuesday</p>
+                <ul class="item">
+                    <div>
+                        <li class="day-list-item mW"></li>
+                        <li class="day-list-item temp"></li>
+                        <li class="day-list-item wind"></li>
+                    </div>
+                    <img class="nextDayWeatherImg" src="./img/thunderstorm.png" alt="">
+
+                </ul>
+            </li>
+            <li class="day-list">
+                <p class="days">tuesday</p>
+                <ul class="item">
+                    <div>
+                        <li class="day-list-item mW"></li>
+                        <li class="day-list-item temp"></li>
+                        <li class="day-list-item wind"></li>
+                    </div>
+                    <img class="nextDayWeatherImg" src="./img/thunderstorm.png" alt="">
+
+                </ul>
+            </li>
+            <li class="day-list">
+                <p class="days">tuesday</p>
+                <ul class="item">
+                    <div>
+                        <li class="day-list-item mW"></li>
+                        <li class="day-list-item temp"></li>
+                        <li class="day-list-item wind"></li>
+                    </div>
+                    <img class="nextDayWeatherImg" src="./img/thunderstorm.png" alt="">
+
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="./time.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
